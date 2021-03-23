@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+
+<body>
+
+    <h1>Menu - Faça a sua escolha</h1>
+
+    <h2>Dados Pessoais</h2>
+    <label for="nome">Nome:</label><input type="text" id="nome"></input><br />
+    <label for="telefone">Telefone:</label><input type="text" id="telefone"></input><br />
+    <label for="email">Email:</label><input type="email" id="email"></input><br />
+
+    <h2>Prato Principal</h2>
+    <input type="radio" id="prato_principal1" name="prato_principal" value="0" checked>Bife Acebolado</input>
+    <input type="radio" id="prato_principal2" name="prato_principal" value="1">Peito de Frango Grelhado</input>
+    <input type="radio" id="prato_principal3" name="prato_principal" value="2">Carne de Panela</input>
+
+    <h2>Acompanhamento</h2>
+    <input type="checkbox" id="acp1" name="acompanhamento" value="0">Mini Salada</input>
+    <input type="checkbox" id="acp2" name="acompanhamento" value="1">Maionese</input>
+    <input type="checkbox" id="acp3" name="acompanhamento" value="2">Farofa</input>
+    <input type="checkbox" id="acp4" name="acompanhamento" value="3">Torresmo</input>
+
+    <br />
+    <br />
+    <button onclick="calc()">Calcular</button>
+
+    <div id="saida">
+
+    </div>
+
+    <script src="calc.js"> </script>
+
+</body>
+
+</html>
